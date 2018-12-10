@@ -1,6 +1,7 @@
 sudo: true
 
 language: java
+
 jdk:
   - oraclejdk8
 
@@ -22,7 +23,7 @@ before_install:
 install: true
 
 script:
-  - ./gradlew clean build
+  - gradle clean build
 
 notifications:
   email:
