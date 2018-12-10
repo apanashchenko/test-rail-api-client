@@ -1,13 +1,13 @@
 plugins {
     id 'java'
     id 'net.ltgt.apt' version '0.10'
-
 }
 
 
 archivesBaseName = 'testrail-api-client'
-group = "io.apanashchenko"
+group = "io.github.apanashchenko"
 version = "1.0-SNAPSHOT"
+description = "TestRail API client"
 
 sourceCompatibility = 1.8
 
@@ -15,10 +15,17 @@ repositories {
     mavenCentral()
 }
 
+jar {
+    from {
+        (configurations.runtime).collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+}
+
 dependencies {
     compileOnly("org.projectlombok:lombok:1.18.4")
 
-    compile("commons-io:commons-io:2.6")
     compile("com.squareup.retrofit2:retrofit:2.5.0")
     compile("com.squareup.retrofit2:converter-gson:2.5.0")
     compile("com.squareup.okhttp3:okhttp:3.12.0")

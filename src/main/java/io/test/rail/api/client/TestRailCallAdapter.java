@@ -33,7 +33,7 @@ public class TestRailCallAdapter<T> extends CallAdapter.Factory {
         try {
             errorMessage = Objects.isNull(errorBody) ? response.message() : errorBody.string();
         } catch (IOException e) {
-            throw new TestRailException("could not read error body", e);
+            throw new TestRailException("Could not read error body", e);
         }
         return errorMessage;
     }
