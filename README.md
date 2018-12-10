@@ -5,3 +5,11 @@ Rest API client for TestRail API(v2)
 
 
 [TestRail API (v2)](http://docs.gurock.com/testrail-api2/start) all API calls declaration
+
+
+#####Create TestRailClient client:
+```java
+TestRailClient testRailClient = new TestRailClientBuilder("TESTRAIL_URL", "USER", "PASSWORD").build();
+```
+
+        
