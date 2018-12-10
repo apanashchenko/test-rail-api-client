@@ -1,6 +1,8 @@
 sudo: true
 
 language: java
+jdk:
+  - oraclejdk8
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
@@ -14,8 +16,13 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
-jobs:
-  include:
-    - stage: executing build
-      script:
-        - ./gradlew clean build
+before_install:
+  - chmod +x gradlew
+
+script:
+  - ./gradlew clean build
+
+notifications:
+  email:
+    recipients:
+      - panashchenko89@gmail.com
