@@ -6,12 +6,12 @@ import retrofit2.http.*;
 
 import java.util.List;
 
-/**
+/*
  * Created by alpa on 2018-12-06
  */
 public interface TestRailClient {
 
-    /**
+    /*
      * ======================== Cases API Requests ================================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-cases">Cases</a>}.
      */
@@ -38,7 +38,7 @@ public interface TestRailClient {
     ResponseBody deleteTestCase(@Path("caseId") int caseId);
 
 
-    /**
+    /*
      * ======================== Case Fields API Requests ============================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-cases-fields">Case Fields</a>}.
      */
@@ -49,7 +49,7 @@ public interface TestRailClient {
     CaseField addCaseField(@Body CaseField caseField);
 
 
-    /**
+    /*
      * ======================== Case Types API Requests =============================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-cases-types">Case Types</a>}.
      */
@@ -57,7 +57,7 @@ public interface TestRailClient {
     List<CaseType> getCaseTypes();
 
 
-    /**
+    /*
      * ======================== Configurations API Requests =========================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-configs">Configurations</a>}.
      */
@@ -82,7 +82,7 @@ public interface TestRailClient {
     @POST("/index.php%3F/api/v2/delete_config/{configId}")
     ResponseBody deleteConfig(@Path("configId") int configId);
 
-    /**
+    /*
      * ======================== Milestones API Requests ==============================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-milestones">Milestones</a>}.
      */
@@ -102,7 +102,7 @@ public interface TestRailClient {
     ResponseBody feleteMilestone(@Path("milestoneId") int milestoneId, @Body Milestone milestone);
 
 
-    /**
+    /*
      * ======================== Plans API Requests ===================================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-plans">Plans</a>}.
      */
@@ -135,7 +135,7 @@ public interface TestRailClient {
     ResponseBody deletePlan(@Path("planId") int planId, @Path("entryId") int entryId);
 
 
-    /**
+    /*
      * ======================== Priorities API Requests ==============================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-priorities">Priorities</a>}.
      */
@@ -143,7 +143,7 @@ public interface TestRailClient {
     List<Priority> getPriorities();
 
 
-    /**
+    /*
      * ======================== Projects API Requests ================================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-projects">Projects</a>}.
      */
@@ -163,7 +163,7 @@ public interface TestRailClient {
     ResponseBody deleteProject(@Path("projectId") int projectId);
 
 
-    /**
+    /*
      * ======================== Results API Requests ==================================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-results">Results</a>}.
      */
@@ -189,7 +189,7 @@ public interface TestRailClient {
     List<Result> addResultsForRun(@Path("runId") int runId, @Body Result result);
 
 
-    /**
+    /*
      * ======================== Result Fields API Requests ==============================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-results-fields">Result Fields</a>}.
      */
@@ -197,7 +197,7 @@ public interface TestRailClient {
     List<ResultField> getResultFields();
 
 
-    /**
+    /*
      * ======================== Runs API Requests ===========================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-runs">Runs</a>}.
      */
@@ -220,7 +220,7 @@ public interface TestRailClient {
     ResponseBody deleteRun(@Path("runId") int runId);
 
 
-    /**
+    /*
      * ======================== Sections API Requests ===========================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-sections">Sections</a>}.
      */
@@ -240,7 +240,7 @@ public interface TestRailClient {
     Section deleteSection(@Path("sectionId") int sectionId);
 
 
-    /**
+    /*
      * ======================== Statuses API Requests ===========================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-statuses">Statuses</a>}.
      */
@@ -248,7 +248,7 @@ public interface TestRailClient {
     List<Status> getStatus();
 
 
-    /**
+    /*
      * ======================== Suites API Requests ===========================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-suites">Suites</a>}.
      */
@@ -268,7 +268,7 @@ public interface TestRailClient {
     ResponseBody deleteSuite(@Path("suiteId") int suiteId);
 
 
-    /**
+    /*
      * ======================== Templates API Requests ===========================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-templates">Templates</a>}.
      */
@@ -276,7 +276,7 @@ public interface TestRailClient {
     List<Template> getTemplates(@Path("projectId") int projectId);
 
 
-    /**
+    /*
      * ======================== Tests API Requests ===========================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-tests">Tests</a>}.
      */
@@ -290,7 +290,7 @@ public interface TestRailClient {
     Test getTest(@Path("testId") int testId);
 
 
-    /**
+    /*
      * ======================== Users API Requests ===========================================
      * See {@link <a href="http://docs.gurock.com/testrail-api2/reference-users">Users</a>}.
      */
