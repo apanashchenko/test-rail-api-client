@@ -23,7 +23,7 @@ apply plugin: 'com.bmuschko.nexus'
 
 group = "io.github.apanashchenko"
 archivesBaseName = 'testrail-api-client'
-version = "1.0"
+version = "1.1"
 description = "TestRail API client"
 
 
