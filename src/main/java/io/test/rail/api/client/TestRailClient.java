@@ -1,6 +1,7 @@
 package io.test.rail.api.client;
 
 import io.test.rail.api.client.models.*;
+import io.test.rail.api.client.models.CustomField;
 import okhttp3.ResponseBody;
 import retrofit2.http.*;
 
@@ -46,7 +47,7 @@ public interface TestRailClient {
     List<CaseField> getCaseFields();
 
     @GET("/index.php%3F/api/v2/add_case_field")
-    CaseField addCaseField(@Body CaseField caseField);
+    CustomField addCaseField(@Body CaseField caseField);
 
 
     /*
