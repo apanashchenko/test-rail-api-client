@@ -66,6 +66,9 @@ public class Run {
     @SerializedName("include_all")
     @Expose
     private Boolean includeAll;
+    @SerializedName("case_ids")
+    @Expose
+    private List<Integer> caseIds;
     @SerializedName("is_completed")
     @Expose
     private Boolean isCompleted;

@@ -3,7 +3,7 @@ Rest API client for TestRail API(v2)
 
 [![Build Status](https://travis-ci.org/apanashchenko/test-rail-api-client.svg?branch=master)](https://travis-ci.org/apanashchenko/test-rail-api-client)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.apanashchenko/testrail-api-client/badge.svg?style=flat)](https://search.maven.org/artifact/io.github.apanashchenko/testrail-api-client/1.0/jar)
-
+[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/apanashchenko/test-rail-api-client/master/LICENSE)
 
 [TestRail API (v2)](http://docs.gurock.com/testrail-api2/start) all API calls declaration
 
