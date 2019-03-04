@@ -184,10 +184,10 @@ public interface TestRailClient {
     List<Result> addResultsForCase(@Path("runId") int runId, @Path("caseId") int caseId, @Body Result result);
 
     @POST("/index.php%3F/api/v2/add_results_for_cases/{runId}")
-    List<Result> addResultsForCase(@Path("runId") int runId, @Body Result result);
+    List<Result> addResultsForCases(@Path("runId") int runId, @Body Results result);
 
     @POST("/index.php%3F/api/v2/add_results/{runId}")
-    List<Result> addResultsForRun(@Path("runId") int runId, @Body Result result);
+    List<Result> addResultsForRun(@Path("runId") int runId, @Body Results result);
 
 
     /*
